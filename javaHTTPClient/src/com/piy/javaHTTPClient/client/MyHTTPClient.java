@@ -85,11 +85,11 @@ public class MyHTTPClient {
 	
 	public static void main(String[] args) throws IOException {
 		
-		MyHTTPClient client = new MyHTTPClient("http://localhost:8080/api/v1/shipwrecks");
+		MyHTTPClient client = new MyHTTPClient("http://localhost:8080/api/v1/shipwrecks/2");
 		
-		Shipwreck wreck = new Shipwreck((long)4, "name1", "desc.", "cond.", 34, 12.0, 13.0, 1992);
+		//Shipwreck wreck = new Shipwreck((long)4, "name1", "desc.", "cond.", 34, 12.0, 13.0, 1992);
 		
-		client.sendPost(wreck);
+		//client.sendPost(wreck);
 
 		client.sendGet();
 		
